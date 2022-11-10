@@ -1,0 +1,141 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+}
+
+.navbar-shadow {
+  box-shadow: 0 8px 6px -6px #0000004d;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("menu.e83ea243.svg") !important;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.positon {
+  position: absolute;
+  top: 0;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.nav-button-solid {
+  color: #fff;
+  background: #246da8;
+  border: none;
+  padding-block: 10px;
+  padding-inline: 35px;
+  font-weight: 600;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.nav-container {
+  flex-grow: .5;
+  justify-content: space-around;
+}
+
+.nav-link.active {
+  text-underline-offset: 10px;
+  -ms-text-underline-offset: 10px;
+  text-decoration: underline;
+  color: #246da8 !important;
+}
+
+.navbar-brand {
+  margin-left: 24px;
+}
+
+.navbar-brand img {
+  height: 80%;
+  width: 80%;
+}
+
+section {
+  height: 100vh;
+}
+
+.home {
+  height: 100%;
+  display: flex;
+}
+
+.home-title {
+  color: #202e3b;
+  font-family: Roboto, sans-serif;
+}
+
+.home-content {
+  margin-block: 6%;
+  font-size: x-large;
+}
+
+.home-action {
+  color: #fff;
+  letter-spacing: 1px;
+  min-width: 210px;
+  height: 64px;
+  background-color: #246da8;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+
+.home-action:hover img {
+  animation: 1s cubic-bezier(.25, .46, .45, .94) infinite both slide-right;
+}
+
+.home-underline {
+  border-bottom: 15px solid;
+  border-image: url("Underline 10.7f388c7b.svg") 0 0 15;
+}
+
+.btn:hover {
+  color: #fff !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+  border: none;
+}
+
+#aboutUs {
+  background-color: #7fffd4;
+}
+
+#services {
+  background-color: bisque;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+/*# sourceMappingURL=index.2687eea0.css.map */
