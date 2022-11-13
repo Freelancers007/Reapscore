@@ -2,29 +2,30 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 /* *:focus{
   outline: solid 1px #202e3b !important;
 } */
-#navbar{
+#navbar {
   position: sticky;
-  top:0
+  top: 0;
 }
 .navbar-shadow {
   -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
 }
-.navbar-toggler{
+.navbar-toggler {
   border: none !important;
 }
-.navbar-toggler:focus{
+.navbar-toggler:focus {
   border: none !important;
   box-shadow: none !important;
 }
 
-.navbar-toggler-icon{
-  background-image: url('/assets/menu.svg') !important;
+.navbar-toggler-icon {
+  background-image: url("/assets/menu.svg") !important;
 }
 
 .nav-link {
@@ -40,10 +41,6 @@ body {
   padding: 10px;
 }
 .nav-button-solid {
-  background: #246da8;
-  color: white;
-  border: none;
-  font-weight: 600;
   padding-inline: 35px;
   padding-block: 10px;
 }
@@ -77,28 +74,22 @@ section {
   height: 100vh;
 }
 
-.home {
+.section-body {
   height: 100%;
   display: flex;
 }
 
 .home-title {
-  font-family: "Roboto", sans-serif;
   color: #202e3b;
+  font-weight: 600;
 }
 
-
 .home-content {
-  margin-block: 6%;
-  font-size: x-large;
+  margin-block: 10%;
+  font-size: larger;
 }
 
 .home-action {
-  background-color: #246da8;
-  color: white;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
   min-width: 210px;
   height: 64px;
 }
@@ -108,7 +99,6 @@ section {
     infinite both;
   animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
-
 
 .home-underline {
   border-bottom: 15px solid;
@@ -120,6 +110,12 @@ section {
   padding-right: 72px;
 } */
 
+.btn {
+  background-color: #246da8;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
 .btn:hover {
   color: white !important;
 }
@@ -127,9 +123,40 @@ section {
   border: none;
   box-shadow: none;
 }
+.section-title {
+  color: #246da8;
+  font-weight: 600;
+  font-size: x-large;
+}
 
-#aboutUs {
-  background-color: aquamarine;
+.section-image {
+  height: 80%;
+}
+
+.aboutus-title {
+  display: block;
+  color: #202e3b;
+  font-weight: 600;
+}
+
+.flex-row {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutus-content{
+  font-size: larger;
+}
+
+.display-5 {
+  font-size: calc(1.425rem + 0.32vw) !important;
+  line-height: 1.2  ;
+}
+
+.highlight-list{
+  margin-top: 24px;
+  line-height: 48px;
 }
 #services {
   background-color: bisque;

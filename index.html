@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -44,25 +44,42 @@
         >
           <ul class="navbar-nav nav-container">
             <li class="nav-item">
-              <a class="nav-link active" href="#home" onclick="event.preventDefault(); scrollSmoothTo('home')">Home</a>
+              <a
+                class="nav-link active"
+                href="#home"
+                onclick="event.preventDefault(); scrollSmoothTo('home')"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aboutUs"  onclick="event.preventDefault(); scrollSmoothTo('aboutUs')">About us</a>
+              <a
+                class="nav-link"
+                href="#aboutUs"
+                onclick="event.preventDefault(); scrollSmoothTo('aboutUs')"
+                >About us</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services"  onclick="event.preventDefault(); scrollSmoothTo('services')">Services</a>
+              <a
+                class="nav-link"
+                href="#services"
+                onclick="event.preventDefault(); scrollSmoothTo('services')"
+                >Services</a
+              >
             </li>
           </ul>
           <div class="navbar-nav">
-            <button class="nav-item nav-button-solid nowrap">Contact us</button>
+            <button class="nav-item btn nav-button-solid nowrap">
+              Contact us
+            </button>
           </div>
         </div>
       </nav>
     </div>
     <!-- end of nav bar -->
 
-    <section id="home" class="p-5">
-      <div class=" align-items-center justify-content-between home">
+    <section id="home" class="px-5">
+      <div class="align-items-center justify-content-between section-body">
         <div class="col">
           <span class="home-title display-1">
             We help you to grow your
@@ -86,7 +103,33 @@
         </div>
       </div>
     </section>
-    <section id="aboutUs"></section>
+
+    <section id="aboutUs" class="px-5 pt-5">
+      <div class="section-title">
+        About us
+        <span class="aboutus-title display-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+        </span>
+      </div>
+      <div class="flex-row">
+        <div class="col-lg-6 d-none d-lg-block d-xl-block">
+          <img src="/assets/Group 2.svg" class="" alt="" />
+        </div>
+        <div class="aboutus-content">
+          <span>
+            We are delivering top level digital services with our best
+            experience team, just get started with us Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit.
+          </span>
+          <ul class="highlight-list">
+            <li>Highlight number 1</li>
+            <li>Highlight number 2</li>
+            <li>Highlight number 3</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section id="services"></section>
   </body>
   <script src="./scripts/script.js"></script>
