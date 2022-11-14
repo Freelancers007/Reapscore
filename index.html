@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@400&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -19,7 +21,7 @@
   <!-- Start of nav bar -->
   <div id="navbar">
     <nav class="navbar p-1 navbar-expand-lg position navbar-light bg-light navbar-shadow">
-      <a class="navbar-brand" href="#home"><img src="./assets/logo full.png" /></a>
+      <a class="navbar-brand" href="/"><img src="./assets/logo full.png" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,10 +29,11 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
         <ul class="navbar-nav nav-container">
           <li class="nav-item">
-            <a class="nav-link active" href="#home" onclick="event.preventDefault(); scrollSmoothTo('home')">Home</a>
+            <a class="nav-link active" href="/" onclick="event.preventDefault(); scrollSmoothTo('home')">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#aboutUs" onclick="event.preventDefault(); scrollSmoothTo('aboutUs')">About us</a>
+            <a class="nav-link" href="/about.html">About
+              us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services"
@@ -52,7 +55,7 @@
       <div class="col">
         <span class="home-title display-1">
           We help you to grow your
-          <span class="home-underline">business</span>
+          <span class="underline">business</span>
         </span>
         <div class="home-content">
           <span>
@@ -60,9 +63,9 @@
             experience team, just get started with us business
           </span>
         </div>
-        <button class="btn col-md-6 col-lg-6 home-action">
+        <a href="#contactus" class="btn col-md-6 col-lg-6 home-action p-2">
           Get In Touch<img style="padding-inline: 20px" src="./assets/Arrow 1.svg" />
-        </button>
+        </a>
       </div>
       <div class="home-image d-none d-lg-block d-xl-block">
         <img src="./assets/Group 1.svg" alt="" />
@@ -104,6 +107,77 @@
       </span>
     </div>
   </section>
+  <section id="contactus" class="container pb-5">
+    <div class="section-title fw-600  pt-5">
+      Contact Us
+    </div>
+    <div class="contant-form-container">
+      <h3 class="color-primary contact-title mt-3 ">Get In Touch</h3>
+      <form class="contact-form">
+        <div class="input-row d-flex mt-4 flex-wrap justify-content-between">
+          <div class="mb-2 input-container">
+            <label for="input-name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="input-name">
+          </div>
+          <div class="mb-2 input-container">
+            <label for="input-email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="input-email">
+          </div>
+        </div>
+        <div class="input-row d-flex mt-4 flex-wrap justify-content-between">
+          <div class="mb-2 input-container">
+            <label for="input-phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="input-phone">
+          </div>
+          <div class="mb-2 input-container">
+            <label for="input-website" class="form-label">Website</label>
+            <input type="url" class="form-control" id="input-website">
+          </div>
+        </div>
+        <div class="my-2">
+          <label for="input-message" class="form-label">Message</label>
+          <textarea class="form-control" style="resize: none;" id="input-message" rows="7"></textarea>
+        </div>
+        <div class="container d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary mt-4">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer id="footer" class="container-fluid p-5">
+    <div class="d-flex footer-container justify-content-between flex-wrap">
+      <div class="brand-description">
+        <img src="./assets/logo full.png" />
+        <p>
+          We are delivering top level digital services with our best experience team, just get started with usLorem
+          ipsum dolor
+          sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div class="quick-links">
+        <h6 class="footer-title color-primary">
+          Quick Links
+        </h6>
+        <ul class="quick-links-content">
+          <li>Home</li>
+          <li>About us</li>
+          <li>Services</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+      <div class="address">
+        <h6 class="footer-title color-primary">
+          Address
+        </h6>
+        <p class="address-content">
+          ATTN: CEO David Kenner
+          Kenner Group Inc.
+          85 Bradford Lane
+          Vincentown, NJ 08120
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 <script src="./scripts/script.js"></script>
 

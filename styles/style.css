@@ -8,75 +8,13 @@ body {
 /* *:focus{
   outline: solid 1px #202e3b !important;
 } */
-#navbar {
-  position: sticky;
-  top: 0;
-}
-
-.navbar-collapse {
-  margin-right: 5%;
-}
-
-.navbar-shadow {
-  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.navbar-toggler {
-  border: none !important;
-}
-
-.navbar-toggler:focus {
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.navbar-toggler-icon {
-  background-image: url("/assets/menu.svg") !important;
-}
-
-.nav-link {
-  font-weight: 600;
+.nowrap {
+  white-space: nowrap;
 }
 
 .positon {
   position: absolute;
   top: 0;
-}
-
-.nav-item {
-  padding: 10px;
-}
-
-.nav-button-solid {
-  padding-inline: 35px;
-  padding-block: 10px;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-.nav-container {
-  flex-grow: 0.5;
-  justify-content: space-around;
-}
-
-.nav-link.active {
-  color: #246da8 !important;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  -ms-text-underline-offset: 10px;
-}
-
-.navbar-brand {
-  margin-left: 5%;
-}
-
-.navbar-brand img {
-  height: 80%;
-  width: 80%;
 }
 
 section {
@@ -100,7 +38,7 @@ section {
 
 .home-action {
   min-width: 210px;
-  height: 64px;
+  /* height: 64px; */
 }
 
 .home-action:hover img {
@@ -108,9 +46,16 @@ section {
   animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 
-.home-underline {
+.underline {
   border-bottom: 15px solid;
   border-image: url("/assets/Underline\ 10.svg");
+  border-image-repeat: stretch;
+  border-image-slice: 0 0 15 0;
+}
+
+.underline-thin {
+  border-bottom: 5px solid;
+  border-image: url("/assets/Underline-thin.svg");
   border-image-repeat: stretch;
   border-image-slice: 0 0 15 0;
 }
@@ -141,8 +86,21 @@ section {
   font-size: x-large;
 }
 
+.color-primary {
+  color: #246da8;
+}
+
+.contact-title {
+  font-weight: 600;
+  font-size: xx-large;
+}
+
 .section-image {
   height: 80%;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
 }
 
 .aboutus-title {
@@ -174,6 +132,30 @@ section {
 #services {
   background-color: bisque;
 }
+
+#contactus {
+  min-height: 100vh;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.input-container {
+  width: 45%;
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    width: 100%;
+  }
+
+  #contactus {
+    height: unset !important;
+  }
+}
+
+
 
 @-webkit-keyframes slide-right {
   0% {
