@@ -2,48 +2,17 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
+
 /* *:focus{
   outline: solid 1px #202e3b !important;
 } */
-#navbar{
-  position: sticky;
-  top:0
-}
-.navbar-shadow {
-  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
-}
-.navbar-toggler{
-  border: none !important;
-}
-.navbar-toggler:focus{
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.navbar-toggler-icon{
-  background-image: url('/assets/menu.svg') !important;
-}
-
-.nav-link {
-  font-weight: 600;
-}
-
-.positon {
-  position: absolute;
-  top: 0;
-}
-
 .nav-item {
   padding: 10px;
 }
+
 .nav-button-solid {
-  background: #246da8;
-  color: white;
-  border: none;
-  font-weight: 600;
   padding-inline: 35px;
   padding-block: 10px;
 }
@@ -65,7 +34,7 @@ body {
 }
 
 .navbar-brand {
-  margin-left: 24px;
+  margin-left: 5%;
 }
 
 .navbar-brand img {
@@ -73,34 +42,71 @@ body {
   width: 80%;
 }
 
-section {
-  height: 100vh;
+#navbar {
+  position: sticky;
+  top: 0;
 }
 
-.home {
+.navbar-collapse {
+  margin-right: 5%;
+}
+
+.navbar-shadow {
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07),
+    0 2px 4px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07),
+    0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("/assets/menu.svg") !important;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.positon {
+  position: absolute;
+  top: 0;
+}
+
+section {
+  min-height: 100vh;
+}
+
+#home {
+  height: 100vh !important;
+}
+
+.section-body {
   height: 100%;
   display: flex;
 }
 
 .home-title {
-  font-family: "Roboto", sans-serif;
   color: #202e3b;
+  font-weight: 600;
 }
 
-
 .home-content {
-  margin-block: 6%;
-  font-size: x-large;
+  margin-block: 10%;
+  font-size: larger;
 }
 
 .home-action {
-  background-color: #246da8;
-  color: white;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
   min-width: 210px;
-  height: 64px;
+  /* height: 64px; */
 }
 
 .home-action:hover img {
@@ -109,30 +115,100 @@ section {
   animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 
-
-.home-underline {
+.underline {
   border-bottom: 15px solid;
   border-image: url("/assets/Underline\ 10.svg");
   border-image-repeat: stretch;
   border-image-slice: 0 0 15 0;
 }
+
+.underline-thin {
+  border-bottom: 5px solid;
+  border-image: url("/assets/Underline-thin.svg");
+  border-image-repeat: stretch;
+  border-image-slice: 0 0 15 0;
+}
+
 /* .home-image img{
   padding-right: 72px;
 } */
 
+.btn {
+  background-color: #246da8;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
 .btn:hover {
   color: white !important;
 }
+
 .btn:focus {
   border: none;
   box-shadow: none;
 }
 
-#aboutUs {
-  background-color: aquamarine;
+.section-title {
+  color: #246da8;
+  font-weight: 600;
+  font-size: x-large;
 }
-#services {
-  background-color: bisque;
+
+.color-primary {
+  color: #246da8;
+}
+
+.contact-title {
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.section-image {
+  width: 95%;
+  height: auto;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.aboutus-title {
+  display: block;
+  color: #202e3b;
+  font-weight: 600;
+}
+
+.flex-row {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutus-content {
+  font-size: larger;
+}
+
+.display-5 {
+  font-size: calc(1.425rem + 0.32vw) !important;
+  line-height: 1.2;
+}
+
+.highlight-list {
+  margin-top: 24px;
+  line-height: 48px;
+}
+
+.services-card {
+  /* width: 300px; */
+  height: 270px;
+  border: 2px dashed #aeaeae;
+  border-radius: 10px;
+  /* flex-grow: 1; */
 }
 
 @-webkit-keyframes slide-right {
@@ -140,16 +216,19 @@ section {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(50px);
     transform: translateX(50px);
   }
 }
+
 @keyframes slide-right {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(50px);
     transform: translateX(50px);
