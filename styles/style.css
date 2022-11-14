@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+
 /* *:focus{
   outline: solid 1px #202e3b !important;
 } */
@@ -11,17 +12,21 @@ body {
   position: sticky;
   top: 0;
 }
-.navbar-collapse{
+
+.navbar-collapse {
   margin-right: 5%;
 }
+
 .navbar-shadow {
-  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+
 .navbar-toggler {
   border: none !important;
 }
+
 .navbar-toggler:focus {
   border: none !important;
   box-shadow: none !important;
@@ -43,6 +48,7 @@ body {
 .nav-item {
   padding: 10px;
 }
+
 .nav-button-solid {
   padding-inline: 35px;
   padding-block: 10px;
@@ -98,8 +104,7 @@ section {
 }
 
 .home-action:hover img {
-  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite both;
+  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 
@@ -109,6 +114,7 @@ section {
   border-image-repeat: stretch;
   border-image-slice: 0 0 15 0;
 }
+
 /* .home-image img{
   padding-right: 72px;
 } */
@@ -119,13 +125,16 @@ section {
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
 }
+
 .btn:hover {
   color: white !important;
 }
+
 .btn:focus {
   border: none;
   box-shadow: none;
 }
+
 .section-title {
   color: #246da8;
   font-weight: 600;
@@ -148,19 +157,20 @@ section {
   flex-direction: row;
 }
 
-.aboutus-content{
+.aboutus-content {
   font-size: larger;
 }
 
 .display-5 {
   font-size: calc(1.425rem + 0.32vw) !important;
-  line-height: 1.2  ;
+  line-height: 1.2;
 }
 
-.highlight-list{
+.highlight-list {
   margin-top: 24px;
   line-height: 48px;
 }
+
 #services {
   background-color: bisque;
 }
@@ -170,16 +180,19 @@ section {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(50px);
     transform: translateX(50px);
   }
 }
+
 @keyframes slide-right {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+
   100% {
     -webkit-transform: translateX(50px);
     transform: translateX(50px);

@@ -1,143 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <title>Reapscore</title>
-  </head>
-  <body>
-    <!-- Start of nav bar -->
-    <div id="navbar">
-      <nav
-        class="navbar p-1 navbar-expand-lg position navbar-light bg-light navbar-shadow"
-      >
-        <a class="navbar-brand" href="#home"
-          ><img src="./assets/logo full.png"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarTogglerDemo01"
-        >
-          <ul class="navbar-nav nav-container">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="#home"
-                onclick="event.preventDefault(); scrollSmoothTo('home')"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#aboutUs"
-                onclick="event.preventDefault(); scrollSmoothTo('aboutUs')"
-                >About us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#services"
-                onclick="event.preventDefault(); scrollSmoothTo('services')"
-                >Services</a
-              >
-            </li>
-          </ul>
-          <div class="navbar-nav">
-            <button class="nav-item btn nav-button-solid nowrap">
-              Contact us
-            </button>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <!-- end of nav bar -->
 
-    <section id="home" class="px-5 pt-5">
-      <div class="align-items-center justify-content-between section-body">
-        <div class="col">
-          <span class="home-title display-1">
-            We help you to grow your
-            <span class="home-underline">business</span>
-          </span>
-          <div class="home-content">
-            <span>
-              We are delivering top level digital services with our best
-              experience team, just get started with us business
-            </span>
-          </div>
-          <button class="btn col-md-6 col-lg-6 home-action">
-            Get In Touch<img
-              style="padding-inline: 20px"
-              src="./assets/Arrow 1.svg"
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <title>Reapscore</title>
+</head>
+
+<body>
+  <!-- Start of nav bar -->
+  <div id="navbar">
+    <nav class="navbar p-1 navbar-expand-lg position navbar-light bg-light navbar-shadow">
+      <a class="navbar-brand" href="#home"><img src="./assets/logo full.png" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+        <ul class="navbar-nav nav-container">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" onclick="event.preventDefault(); scrollSmoothTo('home')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutUs" onclick="event.preventDefault(); scrollSmoothTo('aboutUs')">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services"
+              onclick="event.preventDefault(); scrollSmoothTo('services')">Services</a>
+          </li>
+        </ul>
+        <div class="navbar-nav">
+          <button class="nav-item btn nav-button-solid nowrap">
+            Contact us
           </button>
         </div>
-        <div class="home-image d-none d-lg-block d-xl-block">
-          <img src="./assets/Group 1.svg" alt="" />
-        </div>
       </div>
-    </section>
+    </nav>
+  </div>
+  <!-- end of nav bar -->
 
-    <section id="aboutUs" class="px-5 pt-5">
-      <div class="section-title pt-5">
-        About us
-        <span class="aboutus-title display-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing
+  <section id="home" class="container-lg  pt-5">
+    <div class="align-items-center justify-content-between section-body">
+      <div class="col">
+        <span class="home-title display-1">
+          We help you to grow your
+          <span class="home-underline">business</span>
         </span>
-      </div>
-      <div class="flex-row">
-        <div class="col-lg-6 d-none d-lg-block d-xl-block">
-          <img src="/assets/Group 2.svg" class="" alt="" />
-        </div>
-        <div class="aboutus-content">
+        <div class="home-content">
           <span>
             We are delivering top level digital services with our best
-            experience team, just get started with us Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
+            experience team, just get started with us business
           </span>
-          <ul class="highlight-list">
-            <li>Highlight number 1</li>
-            <li>Highlight number 2</li>
-            <li>Highlight number 3</li>
-          </ul>
         </div>
+        <button class="btn col-md-6 col-lg-6 home-action">
+          Get In Touch<img style="padding-inline: 20px" src="./assets/Arrow 1.svg" />
+        </button>
       </div>
-    </section>
+      <div class="home-image d-none d-lg-block d-xl-block">
+        <img src="./assets/Group 1.svg" alt="" />
+      </div>
+    </div>
+  </section>
 
-    <section id="services">
-      <div class="section-title pt-5">
-        About us
-        <span class="aboutus-title display-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing
-        </span>
+  <section id="aboutUs" class="container pt-5">
+    <div class="section-title pt-5 w-50">
+      About us
+      <span class="aboutus-title display-5 mt-lg-5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+      </span>
+    </div>
+    <div class="flex-row">
+      <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center">
+        <img src="/assets/Group 2.svg" class="section-image" alt="" />
       </div>
-    </section>
-  </body>
-  <script src="./scripts/script.js"></script>
+      <div class="aboutus-content">
+        <span>
+          We are delivering top level digital services with our best
+          experience team, just get started with us Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit.
+        </span>
+        <ul class="highlight-list">
+          <li>Highlight number 1</li>
+          <li>Highlight number 2</li>
+          <li>Highlight number 3</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-title pt-5">
+      About us
+      <span class="aboutus-title display-5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+      </span>
+    </div>
+  </section>
+</body>
+<script src="./scripts/script.js"></script>
+
 </html>
