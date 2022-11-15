@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./styles/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@400&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <title>About Us - Reapscore</title>
 </head>
 
@@ -40,9 +38,12 @@
                     </li>
                 </ul>
                 <div class="navbar-nav">
-                    <button class="nav-item btn nav-button-solid nowrap">
+                    <!-- <button class="nav-item btn nav-button-solid nowrap">
                         Contact us
-                    </button>
+                    </button> -->
+                    <a href="/#contactus" class="btn col-md-4 col-lg-4 home-action p-2">
+                        Contact Us
+                    </a>
                 </div>
             </div>
         </nav>
@@ -56,7 +57,7 @@
                 We help you to grow your
                 <span class="underline-thin">business</span>
             </p>
-            <p class="text-center my-5">
+            <p class="text-center f-pop my-5">
                 We are delivering top level digital services with our best experience team, just get started
                 with us Lorem ipsum dolor
                 sit amet,
@@ -66,7 +67,7 @@
                     Who we
                     <span class="underline-thin">are?</span>
                 </p>
-                <p class="about-desc text-center">
+                <p class="about-desc f-pop text-center">
                     We are delivering top level digital services with our best experience team, just get started with
                     usLorem ipsum dolor
                     sit amet, We are delivering top level digital services with our best experience team, just get
@@ -78,7 +79,7 @@
             </div>
         </div>
     </section>
-    <footer id="footer" class="container-fluid p-5">
+    <footer id="footer" class="container-fluid p-3 p-md-5">
         <div class="d-flex footer-container justify-content-between">
             <div class="brand-description">
                 <img src="./assets/logo full.png" />
@@ -94,10 +95,12 @@
                     Quick Links
                 </h6>
                 <ul class="quick-links-content">
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Services</li>
-                    <li>Contact us</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#aboutUs">About us</a></li>
+                    <li><a href="/#services">Services</a></li>
+                    <li><a href="/#contactus">
+                            Contact Us
+                        </a></li>
                 </ul>
             </div>
             <div class="address">
