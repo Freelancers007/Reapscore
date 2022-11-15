@@ -13,4 +13,9 @@
 
 #landing {
     height: fit-content !important;
+    min-height: unset !important;
+}
+
+.f-pop {
+    font-family: 'poppins', sans-serif;
 }

@@ -24,6 +24,20 @@
     font-size: 14px;
 }
 
+.quick-links-content li {
+    cursor: pointer;
+}
+
+.quick-links-content li a {
+    text-decoration: none;
+    color: black;
+}
+
+.quick-links-content li:hover,
+.quick-links-content li a:hover {
+    color: #246da8;
+}
+
 .address {
     width: 20%;
 }
@@ -38,11 +52,13 @@
     }
 
     .quick-links {
-        display: none;
+        /* display: none; */
+        width: 100%;
+        text-align: center;
     }
 
     .brand-description {
-        width: 100%;
+        display: none;
     }
 
     .address {
