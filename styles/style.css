@@ -32,6 +32,10 @@ section {
     min-height: 80vh !important;
   }
 
+  section {
+    min-height: fit-content !important;
+  }
+
   /* .section-body {
     height: 75%;
   } */
