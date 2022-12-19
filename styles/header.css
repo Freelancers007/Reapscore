@@ -5,12 +5,13 @@
 
 .navbar-collapse {
     margin-right: 5%;
+    /* margin-left: 200px; */
 }
 
 .navbar-shadow {
-    -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
 
 .navbar-toggler {
@@ -62,8 +63,3 @@
     height: 80%;
     width: 80%;
 }
-
-
-
-
-
