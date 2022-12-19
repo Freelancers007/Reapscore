@@ -26,6 +26,17 @@ section {
   display: flex;
 }
 
+@media (max-width: 460px) {
+  #home {
+    height: 80vh !important;
+    min-height: 80vh !important;
+  }
+
+  /* .section-body {
+    height: 75%;
+  } */
+}
+
 .home-title {
   color: #202e3b;
   font-weight: 600;
@@ -42,16 +53,15 @@ section {
 }
 
 .home-action:hover img {
-  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite both;
+  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 
-.read-more:hover  img{
-  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite both;
+.read-more:hover img {
+  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
+
 .underline {
   border-bottom: 15px solid;
   border-image: url("/assets/Underline\ 10.svg");
@@ -75,6 +85,15 @@ section {
   color: white;
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
+  border-radius: 0px !important;
+}
+
+.home-action {
+  width: 256px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn:hover {
@@ -134,17 +153,19 @@ section {
   margin-top: 24px;
   line-height: 48px;
 }
+
 .highlight-list {
   margin-top: 24px;
   line-height: 48px;
 }
 
-#home{
-  height:100vh
+#home {
+  height: 100vh
 }
 
 .services-card {
-  height: 243px;
+  height: 275px;
+  width: 300px;
   border: 2px dashed #aeaeae;
   border-radius: 10px;
   padding: 1.5rem;
