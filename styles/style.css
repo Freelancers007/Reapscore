@@ -1,8 +1,25 @@
+@font-face {
+  font-family: gilroy;
+  src: url('../assets/fonts/Gilroy-Font/Gilroy-Regular.ttf');
+}
+
+@font-face {
+  font-family: gilmer;
+  src: url('../assets/fonts/Gilmer-Font/Gilmer-Regular.otf');
+}
+
+.gilroy{
+  font-family: gilroy;
+}
+
+.gilmer{
+  font-family: gilmer!important;
+}
 body {
   width: 100%;
   height: 100%;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: gilroy;
 }
 
 /* *:focus{
@@ -61,6 +78,10 @@ section {
   animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 
+.read-more{
+  font-weight: 800;
+  color:#246DA8;
+}
 .read-more:hover img {
   -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
@@ -87,7 +108,7 @@ section {
 .btn {
   background-color: #246da8;
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: gilmer;
   letter-spacing: 1px;
   border-radius: 0px !important;
 }
@@ -199,7 +220,7 @@ section {
 }
 
 .services-card .card-content {
-  font-family: "poppins", sans-serif;
+  font-family: gilmer;
   margin-block: 15px;
   font-size: medium;
   font-weight: 400;
