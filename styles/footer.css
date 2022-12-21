@@ -1,11 +1,38 @@
+@font-face {
+    font-family: gilroy;
+    src: url('../assets/fonts/Gilroy-Font/Gilroy-Regular.ttf');
+}
+
+@font-face {
+    font-family: gilmer;
+    src: url('../assets/fonts/Gilmer-Font/Gilmer-Regular.otf');
+}
+
+@font-face {
+    font-family: gilmer-medium;
+    src: url('../assets/fonts/Gilmer-Font/Gilmer-Medium.otf');
+}
+
+@font-face {
+    font-family: gilroy-bold;
+    src: url('../assets/fonts/Gilroy-Font/Gilroy-Bold.ttf');
+}
+
 #footer {
-    -webkit-box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.07), 0 -2px 4px rgba(0, 0, 0, 0.05);
+
+    -webkit-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.06);
     -moz-box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.07), 0 -2px 4px rgba(0, 0, 0, 0.05);
     box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.07), 0 -2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .brand-description {
     width: 50%;
+    max-width: 550px;
+    font-family: gilmer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.7257px;
+    line-height: 162%;
 }
 
 .brand-description img {
@@ -16,12 +43,21 @@
 
 .footer-title {
     font-weight: 600;
+    font-family: gilroy-bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #246DA8;
 }
 
 .quick-links-content {
     list-style: none;
     padding-inline-start: 0px;
-    font-size: 14px;
+    font-family: gilmer-medium;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.94px;
+    line-height: 20px;
 }
 
 .quick-links-content li {
@@ -43,7 +79,11 @@
 }
 
 .address-content {
-    font-size: 16px;
+    font-family: gilmer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.7257px;
+    line-height: 162%;
 }
 
 @media (max-width: 540px) {
@@ -57,12 +97,36 @@
         text-align: center;
     }
 
+
     .brand-description {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        font-weight: 400;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .footer-title {
+        font-size: 22px;
+        line-height: 24px;
     }
 
     .address {
-        display: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .address-content {
+        font-weight: 400;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .quick-links-content li {
+        padding: 7px 0;
     }
 
 }

@@ -8,13 +8,19 @@
   src: url('../assets/fonts/Gilmer-Font/Gilmer-Regular.otf');
 }
 
-.gilroy{
-  font-family: gilroy;
+@font-face {
+  font-family: gilroy-bold;
+  src: url('../assets/fonts/Gilroy-Font/Gilroy-Bold.ttf');
 }
 
-.gilmer{
-  font-family: gilmer!important;
+.gilroy {
+  font-family: gilroy !important;
 }
+
+.gilmer {
+  font-family: gilmer !important;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -34,8 +40,9 @@ body {
   top: 0;
 }
 
+
 section {
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .section-body {
@@ -43,34 +50,28 @@ section {
   display: flex;
 }
 
-@media (max-width: 460px) {
-  #home {
-    height: 80vh !important;
-    min-height: 80vh !important;
-  }
-
-  section {
-    min-height: fit-content !important;
-  }
-
-  /* .section-body {
-    height: 75%;
-  } */
+#home {
+  height: 60vh;
 }
+
+
 
 .home-title {
   color: #202e3b;
   font-weight: 600;
+  font-size: 68px;
+  font-family: gilroy-bold;
+  line-height: 85px;
 }
 
 .home-content {
   margin-block: 10%;
-  font-size: larger;
+  font-size: 22px;
 }
 
 .home-action {
-  min-width: 210px;
-  /* height: 64px; */
+  width: 256px;
+  height: 64px;
 }
 
 .home-action:hover img {
@@ -78,10 +79,11 @@ section {
   animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 
-.read-more{
+.read-more {
   font-weight: 800;
-  color:#246DA8;
+  color: #246DA8;
 }
+
 .read-more:hover img {
   -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
@@ -95,15 +97,18 @@ section {
 }
 
 .underline-thin {
-  border-bottom: 5px solid;
+  border-bottom: 7px solid;
   border-image: url("/assets/Underline-thin.svg");
   border-image-repeat: stretch;
   border-image-slice: 0 0 15 0;
 }
 
-/* .home-image img{
-  padding-right: 72px;
-} */
+.home-image img {
+  /* padding-right: 72px; */
+  width: 476px;
+  height: 428px;
+}
+
 
 .btn {
   background-color: #246da8;
@@ -132,8 +137,9 @@ section {
 
 .section-title {
   color: #246da8;
-  font-weight: 600;
-  font-size: x-large;
+  /* font-weight: 600; */
+  font-family: gilroy-bold;
+  font-size: 28px;
 }
 
 .color-primary {
@@ -141,8 +147,33 @@ section {
 }
 
 .contact-title {
-  font-weight: 600;
-  font-size: xx-large;
+  font-family: gilroy-bold !important;
+  /* font-weight: 600; */
+  font-size: 36px;
+}
+
+.form-label {
+  font-family: gilroy-bold !important;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.form-control {
+  min-height: 58px;
+  background-color: #FAF9F9;
+  border: 1px solid #C8C8C8;
+  border-radius: 3px;
+}
+
+.contact-btn {
+  width: 176px;
+  height: 64px;
+  font-family: gilroy-bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: #246DA8 !important;
+  border-radius: 11px !important;
 }
 
 .section-image {
@@ -156,7 +187,9 @@ section {
 .aboutus-title {
   display: block;
   color: #202e3b;
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 36px;
+  font-family: gilroy-bold !important;
 }
 
 .flex-row {
@@ -166,7 +199,10 @@ section {
 }
 
 .aboutus-content {
-  font-size: larger;
+  font-size: 22px;
+  font-family: gilroy;
+  line-height: 133.5%;
+  /* width: 512px; */
 }
 
 .display-5 {
@@ -184,9 +220,6 @@ section {
   line-height: 48px;
 }
 
-#home {
-  height: 100vh
-}
 
 .services-card {
   height: 275px;
@@ -208,21 +241,25 @@ section {
 
 .chooseus-card .card-title {
   margin-left: 15px;
-  font-size: large;
-  font-weight: 600;
+  font-family: gilroy-bold !important;
+  font-size: 24px;
+  /* font-weight: 600; */
   display: inline;
+  margin-bottom: 0;
 }
 
 .services-card .card-title {
+  line-height: 33px;
+  font-family: gilroy-bold !important;
   margin-top: 30px;
-  font-size: large;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: bolder;
 }
 
 .services-card .card-content {
-  font-family: gilmer;
+  font-family: gilroy !important;
   margin-block: 15px;
-  font-size: medium;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -269,5 +306,98 @@ section {
   100% {
     -webkit-transform: translateX(50px);
     transform: translateX(50px);
+  }
+}
+
+@media (max-width: 460px) {
+  #home {
+    /* height: fit-content; */
+    min-height: 60vh !important;
+  }
+
+  section {
+    min-height: fit-content !important;
+  }
+
+  /* .section-body {
+    height: 75%;
+  } */
+  .home-title {
+    color: #202e3b;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .home-content {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .home-action {
+    width: 180px;
+    height: 45px;
+    font-weight: 600;
+    font-size: 12.4904px;
+  }
+
+  .home-image img {
+    width: 300px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .aboutus-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .aboutus-content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+  }
+
+  .services-card .card-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .card-content {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .chooseus-card .card-title {
+    font-size: 19.7608px;
+    line-height: 23px;
+  }
+
+  .contact-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .form-label {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .form-control {
+    min-height: 46px;
+  }
+
+  .contact-btn {
+    width: 96px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .row {
+    --bs-gutter-x: 0rem !important;
   }
 }
