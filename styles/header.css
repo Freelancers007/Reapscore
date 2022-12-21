@@ -76,3 +76,24 @@
     height: 80%;
     width: 80%;
 }
+
+@media (max-width: 780px) {
+    .navbar-collapse {
+        text-align: center;
+        background-color: white;
+        margin-right: 0px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-link {
+        margin-right: 0px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
