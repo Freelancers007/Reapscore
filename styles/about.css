@@ -1,14 +1,70 @@
+@font-face {
+    font-family: gilroy;
+    src: url('../assets/fonts/Gilroy-Font/Gilroy-Regular.ttf');
+}
+
+@font-face {
+    font-family: gilmer;
+    src: url('../assets/fonts/Gilmer-Font/Gilmer-Regular.otf');
+}
+
+@font-face {
+    font-family: gilmer-medium;
+    src: url('../assets/fonts/Gilmer-Font/Gilmer-Medium.otf');
+}
+
+@font-face {
+    font-family: gilroy-bold;
+    src: url('../assets/fonts/Gilroy-Font/Gilroy-Bold.ttf');
+}
+
 .about-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #202e3b;
     margin-bottom: 1rem;
+    text-align: center;
+    font-family: gilroy-bold;
+    font-size: 41px;
+    line-height: 48px;
     text-align: center;
 }
 
+.aboutus {
+    font-family: gilroy-bold;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #246DA8;
+}
+
 .about-desc-title {
-    font-size: 2rem;
-    font-weight: 600;
+    font-family: gilroy-bold;
+    font-size: 42px;
+    line-height: 51px;
+}
+
+.about-primary-desc {
+    font-family: gilmer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.73px;
+    color: #666666;
+}
+
+.about-content {
+    /* max-width: 50%; */
+    margin-right: 100px;
+}
+
+.about-img {
+    width: 456px;
+    object-fit: contain;
+}
+
+.about-desc {
+    font-family: gilmer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.73px;
+    color: #666666;
 }
 
 #landing {
@@ -18,4 +74,34 @@
 
 .f-pop {
     font-family: 'poppins', sans-serif;
+}
+
+@media (max-width: 460px) {
+
+    .about-title,
+    .about-desc-title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .aboutus {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .about-primary-desc,
+    .about-desc {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about-content {
+        margin-right: 0;
+        text-align: center;
+    }
 }

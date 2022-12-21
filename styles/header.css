@@ -1,6 +1,11 @@
 #navbar {
     position: sticky;
     top: 0;
+    height: 82px !important;
+}
+
+.navbar {
+    height: 100% !important;
 }
 
 .navbar-collapse {
@@ -29,6 +34,7 @@
 
 .nav-link {
     font-weight: 600;
+    font-size: 18px;
 }
 
 
@@ -40,17 +46,24 @@
 .nav-button-solid {
     padding-inline: 35px;
     padding-block: 10px;
+    width: 176px;
+    height: 52px;
+    font-size: 16px;
 }
 
 
 .nav-container {
     flex-grow: 0.5;
-    justify-content: space-around;
+    justify-content: end;
+}
+
+.nav-link {
+    margin-right: 64px;
 }
 
 .nav-link.active {
     color: #246da8 !important;
-    text-decoration: underline;
+    text-decoration: none;
     text-underline-offset: 10px;
     -ms-text-underline-offset: 10px;
 }
